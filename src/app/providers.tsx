@@ -1,7 +1,8 @@
 'use client'
 
 import {HeroUIProvider} from '@heroui/react'
-import {ReactNode} from "react";
+import {ReactNode, StrictMode} from "react";
+import { Auth0Provider } from "@auth0/nextjs-auth0/client";
 
 type ProvidersProps = Readonly<{
     children: ReactNode
@@ -9,8 +10,12 @@ type ProvidersProps = Readonly<{
 
 export function Providers(props: ProvidersProps) {
    return (
-      <HeroUIProvider>
-         {props.children}
-      </HeroUIProvider>
+       <StrictMode>
+         <Auth0Provider>
+            <HeroUIProvider>
+               {props.children}
+            </HeroUIProvider>
+         </Auth0Provider>
+       </StrictMode>
    )
 }

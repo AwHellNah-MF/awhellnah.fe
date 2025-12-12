@@ -9,11 +9,18 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@auth0/nextjs-auth0": "^4.13.3",
+    "@heroicons/react": "^2.2.0",
+    "@heroui/button": "^2.2.27",
+    "@heroui/link": "^2.2.23",
     "@heroui/react": "^2.8.5",
+    "@heroui/system": "^2.4.23",
+    "@heroui/theme": "^2.4.23",
     "framer-motion": "^12.23.26",
     "next": "16.0.8",
     "react": "19.2.1",
-    "react-dom": "19.2.1"
+    "react-dom": "19.2.1",
+    "simplex-noise": "^4.0.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
